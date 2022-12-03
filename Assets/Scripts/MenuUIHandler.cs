@@ -7,6 +7,8 @@ using TMPro;
 
 public class MenuUIHandler : MonoBehaviour
 {
+    public TMP_InputField nameInputField;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,7 @@ public class MenuUIHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        DPS.playerName = nameInputField.text;
     }
     public void CloseApp()
     {
